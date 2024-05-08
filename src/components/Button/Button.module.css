@@ -1,0 +1,28 @@
+.button {
+  padding: 0.2rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(84, 167, 230);
+  background: linear-gradient(
+    90deg,
+    rgb(39, 127, 216) 0%,
+    rgb(135, 183, 226) 100%
+  );
+  color: white;
+  font-size: 2rem;
+  border-radius: 12px;
+  transition: all ease 0.3s;
+  border: none;
+}
+
+.button:hover {
+  cursor: pointer;
+  letter-spacing: 2px;
+}
+
+@media (max-width: 600px) {
+  .button {
+    margin-top: 2rem;
+  }
+}

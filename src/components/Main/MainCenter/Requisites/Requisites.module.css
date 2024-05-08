@@ -1,0 +1,391 @@
+.cont {
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+}
+
+.flex {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.flexAnother {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.bankLogo {
+  width: 15vw;
+  cursor: pointer;
+}
+
+.bankLogoMini {
+  width: 10vw;
+  cursor: pointer;
+}
+
+.cardCont {
+  height: 100%;
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  padding: 4rem 1rem;
+  width: 90%;
+  border: 8px solid var(--color-green);
+  border-radius: 20px;
+  height: 80%;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  width: 25%;
+}
+
+.up {
+  display: flex;
+  font-size: 55px;
+  gap: 1.5rem;
+}
+
+.down {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+  font-size: 40px;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.bold {
+  font-family: "Blogger Sans Bold";
+}
+
+.copy {
+  width: 50px;
+  cursor: pointer;
+}
+
+.flexCopy {
+  display: flex;
+}
+
+.copyMess {
+  font-size: 2rem;
+  background: var(--gradient-color);
+  border-radius: 20px;
+  padding: 0.5rem;
+  color: white;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+}
+
+@media (max-width: 1680px) {
+  .cont {
+    padding: 2%;
+  }
+
+  .bankLogo {
+    width: 15vw;
+  }
+
+  .bankLogoMini {
+    width: 150px;
+  }
+
+  .up {
+    font-size: 40px;
+    gap: 1rem;
+  }
+
+  .down {
+    gap: 1rem;
+    margin-top: 1rem;
+    font-size: 30px;
+  }
+
+  .copy {
+    width: 40px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .cont {
+    padding: 1%;
+  }
+
+  .bankLogo {
+    width: 13vw;
+  }
+
+  .bankLogoMini {
+    width: 130px;
+  }
+
+  .up {
+    font-size: 30px;
+    gap: 1rem;
+  }
+
+  .down {
+    gap: 1rem;
+    margin-top: 1rem;
+    font-size: 24px;
+  }
+
+  .copy {
+    width: 30px;
+  }
+
+  .copyMess {
+    font-size: 20px;
+    padding: 0.2rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .card {
+    padding: 1rem 1rem;
+    width: 90%;
+  }
+  .bankLogo {
+    width: 13vw;
+  }
+
+  .bankLogoMini {
+    width: 120px;
+  }
+
+  .up {
+    font-size: 23px;
+  }
+
+  .down {
+    font-size: 20px;
+  }
+
+  .copy {
+    width: 23px;
+  }
+
+  .copyMess {
+    font-size: 20px;
+    padding: 0.1rem 0.2rem;
+  }
+}
+
+@media (max-width: 1024px) and (orientation: portrait) {
+  .flexAnother {
+    flex-direction: column;
+  }
+
+  .cardCont {
+    width: 90%;
+    margin: auto;
+  }
+
+  .card {
+    padding: 2rem 1rem;
+    width: 100%;
+    height: unset;
+  }
+
+  .cards {
+    margin: 2rem auto;
+    flex-direction: row;
+    width: 90%;
+  }
+
+  .bankLogo {
+    width: 20vw;
+    margin-top: 10vh;
+  }
+
+  .bankLogoMini {
+    width: 180px;
+  }
+
+  .up {
+    font-size: 35px;
+  }
+
+  .down {
+    font-size: 25px;
+  }
+
+  .copy {
+    width: 25px;
+  }
+
+  .copyMess {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 768px) {
+  .flexAnother {
+    flex-direction: column;
+  }
+
+  .cardCont {
+    width: 90%;
+    margin: auto;
+  }
+
+  .card {
+    padding: 2rem 1rem;
+    width: 100%;
+    height: unset;
+  }
+
+  .cards {
+    margin: 2rem auto;
+    flex-direction: row;
+    width: 90%;
+  }
+
+  .bankLogo {
+    width: 20vw;
+    margin-top: 10vh;
+  }
+
+  .bankLogoMini {
+    width: 180px;
+  }
+
+  .up {
+    font-size: 35px;
+  }
+
+  .down {
+    font-size: 25px;
+  }
+
+  .copy {
+    width: 25px;
+  }
+
+  .copyMess {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 684px) {
+  .up {
+    font-size: 28px;
+  }
+
+  .down {
+    font-size: 20px;
+  }
+
+  .copy {
+    width: 20px;
+    margin-left: 10px;
+  }
+
+  .copyMess {
+    font-size: 18px;
+  }
+
+  .bankLogoMini {
+    width: 140px;
+  }
+}
+
+@media (max-width: 548px) {
+  .up {
+    font-size: 22px;
+  }
+
+  .down {
+    font-size: 18px;
+  }
+
+  .copyMess {
+    font-size: 14px;
+  }
+
+  .bankLogoMini {
+    width: 100px;
+  }
+}
+
+@media (max-width: 416px) {
+  .up {
+    font-size: 19px;
+  }
+
+  .down {
+    font-size: 16px;
+  }
+
+  .copyMess {
+    font-size: 14px;
+  }
+
+  .bankLogoMini {
+    width: 90px;
+  }
+}
+
+@media (max-width: 400px) {
+  .up {
+    font-size: 18px;
+  }
+
+  .down {
+    font-size: 15px;
+  }
+
+  .copyMess {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 366px) {
+  .up {
+    font-size: 16px;
+  }
+
+  .down {
+    font-size: 14px;
+  }
+
+  .copyMess {
+    font-size: 8px;
+  }
+
+  .bankLogoMini {
+    width: 70px;
+  }
+}
+
+@media (max-width: 340px) {
+  .cont {
+    min-width: 340px;
+    padding: 0%;
+  }
+
+  .cardCont {
+    min-width: 340px;
+  }
+}

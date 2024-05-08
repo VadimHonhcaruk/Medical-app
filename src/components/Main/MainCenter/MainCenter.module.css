@@ -1,0 +1,130 @@
+.main {
+  display: flex;
+  width: 100vw;
+  height: calc(79.815vh + 71px);
+  min-height: 765.42px;
+}
+
+.events {
+  display: none;
+  color: white;
+  font-size: 48px;
+  font-family: "Blogger Sans Bold";
+}
+
+.mainleft {
+  background-color: var(--background-color);
+  width: 100vw;
+  height: inherit;
+  min-height: inherit;
+}
+
+.mainright {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  background-color: var(--background-color);
+  height: inherit;
+  min-height: inherit;
+  margin-top: 3px;
+  width: calc(100% - 74.84375vw - 3px);
+}
+
+@media (max-width: 1680px) {
+  .main {
+    min-height: 535.71px;
+  }
+}
+
+@media (max-width: 960px) {
+  .main {
+    min-height: 431px;
+  }
+}
+
+@media (max-width: 1024px) and (orientation: portrait) {
+  .main {
+    display: flex;
+    width: 100vw;
+    height: unset;
+    min-height: unset;
+    flex-direction: column;
+  }
+
+  .mainleft {
+    margin: unset;
+    width: 100vw;
+    min-height: calc(100vh - 6vh - 10vh - 50vw);
+  }
+
+  .mainright {
+    width: 100%;
+    background-color: unset;
+    margin-top: 0;
+  }
+  .events {
+    display: unset;
+    height: 6vh;
+    line-height: 6vh;
+  }
+}
+@media (max-width: 768px) {
+  .main {
+    display: flex;
+    width: 100vw;
+    height: unset;
+    min-height: unset;
+    flex-direction: column;
+  }
+
+  .mainleft {
+    margin: unset;
+    width: 100vw;
+    min-height: calc(100vh - 6vh - 10vh - 50vw);
+  }
+
+  .mainright {
+    width: 100%;
+    background-color: unset;
+    margin-top: 0;
+  }
+  .events {
+    display: unset;
+    height: 6vh;
+    line-height: 6vh;
+  }
+}
+
+@media (max-width: 500px) {
+  .events {
+    height: 5vh;
+    line-height: 5vh;
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 340px) {
+  .main {
+    min-width: 340px;
+  }
+
+  .mainleft {
+    width: 100%;
+  }
+
+  .mainright {
+    min-width: 340px;
+  }
+
+  .events {
+    min-width: 340px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 330px) {
+  .events {
+    font-size: 26px;
+  }
+}
