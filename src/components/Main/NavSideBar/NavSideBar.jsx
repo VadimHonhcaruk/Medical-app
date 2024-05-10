@@ -31,7 +31,7 @@ export const NavSideBar = ({ setCurrentIdStudent, theme, isOpen, setIsOpen, hand
             <div>
                 <div className={c.closeCont}><span className={c.menu}>Меню</span><img onClick={() => setIsOpen(false)} className={c.icon} src={theme === 'light' ? close : closeWhite} alt='close'></img></div>
                 <div className={c.menuOption}>
-                    <NavOption choosenPage={choosenPage} setIsOpen={setIsOpen} src={check} text='Відвідування' link='attendance' />
+                    <NavOption choosenPage={choosenPage} setIsOpen={setIsOpen} src={check} text='Онлайн запис' link='attendance' />
                     <NavOption choosenPage={choosenPage} setIsOpen={setIsOpen} src={document} text='Документи' link='documents' />
                     <NavOption choosenPage={choosenPage} setIsOpen={setIsOpen} src={dollar} text='Реквізити' link='requisites' />
                     <NavOption choosenPage={choosenPage} setIsOpen={setIsOpen} src={contact} text='Контакти' link='contacts' />

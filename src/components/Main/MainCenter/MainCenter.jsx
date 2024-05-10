@@ -6,6 +6,7 @@ import { Contacts } from './Contacts/Contacts';
 import { Documents } from './Documents/Documents';
 import { Requisites } from './Requisites/Requisites';
 import { Profile } from './Profile/Profile';
+import DoctorAppointmentForm from './Registration/Registration';
 
 export const MainCenter = ({ studentData, currentIdStudent, social, phoneSoc, address, theme }) => {
     return (
@@ -16,7 +17,7 @@ export const MainCenter = ({ studentData, currentIdStudent, social, phoneSoc, ad
                     <Route path="/contacts" element={<Contacts social={social} phoneSoc={phoneSoc} address={address} theme={theme} />} />
                     <Route path="/documents" element={<Documents />} />
                     <Route path="/requisites" element={<Requisites />} />
-                    <Route path="/attendance" element={<></>} />
+                    <Route path="/attendance" element={<DoctorAppointmentForm />} />
                     <Route path="/profile" element={<Profile currentIdStudent={currentIdStudent} studentData={studentData} />} />
                 </Routes>
             </div>
