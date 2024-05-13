@@ -5,6 +5,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+
+li {
+  font-size: 1.3rem;
+  margin: 0.8rem 0;
 }
 
 label {
@@ -23,6 +29,21 @@ button {
   outline: none;
 }
 
+button {
+  cursor: pointer;
+}
+
+.butt {
+  background-color: var(--background-color);
+  color: var(--color);
+  font-size: 1.3rem;
+  padding: 0.5rem 2rem;
+  border: 1px solid #85a2d4;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+}
+
 .flex {
   display: flex;
   flex-direction: column;
@@ -37,6 +58,7 @@ button {
 
 h2 {
   font-size: 2rem;
+  margin: 2rem 0;
 }
 
 .formik {
