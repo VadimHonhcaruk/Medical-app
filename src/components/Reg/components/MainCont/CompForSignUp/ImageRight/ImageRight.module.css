@@ -1,0 +1,46 @@
+.image {
+  width: 45%;
+}
+
+.contImage {
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+  width: 30%;
+}
+
+@media all and (max-width: 1530px) {
+  .image {
+    width: 50%;
+  }
+}
+
+@media all and (max-width: 1368px) {
+  .image {
+    width: 50%;
+  }
+
+  .contImage {
+    left: 60%;
+    bottom: 10%;
+    height: 90%;
+    width: 23%;
+  }
+}
+
+@media all and (max-width: 992px) {
+  .image {
+    width: 53%;
+  }
+
+  .contImage {
+    left: 61%;
+    bottom: 18%;
+    height: 90%;
+    width: 25%;
+  }
+}

@@ -1,0 +1,18 @@
+.App {
+  width: 51vw;
+  height: 63vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--gradient-color);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  min-height: 100vh;
+  opacity: 1;
+}

@@ -1,0 +1,50 @@
+.styleL {
+  right: 15rem !important;
+}
+
+.style {
+  width: 16rem !important;
+}
+
+@media all and (max-width: 1320px) {
+  .style {
+    width: 15rem !important;
+    margin-top: 1% !important;
+  }
+
+  .styleL {
+    right: 14rem !important;
+  }
+}
+
+@media all and (max-width: 908px) {
+  .style {
+    width: 13rem !important;
+  }
+
+  .styleL {
+    right: 12rem !important;
+  }
+}
+
+@media all and (max-width: 798px) {
+  .style {
+    width: 12rem !important;
+  }
+
+  .styleL {
+    right: 11rem !important;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .style {
+    width: 100% !important;
+    margin: auto !important;
+  }
+
+  .styleL {
+    left: 5% !important;
+    bottom: 2.2rem !important;
+  }
+}

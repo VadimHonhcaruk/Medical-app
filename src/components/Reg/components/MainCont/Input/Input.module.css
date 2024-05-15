@@ -1,0 +1,168 @@
+.inputBox input {
+  position: relative;
+  width: 15rem;
+  height: 3rem;
+  border: 1px solid #000000;
+  background: transparent;
+  padding: 10px;
+  border-radius: 4px;
+  outline: none;
+  font-size: 1.4rem;
+  color: #000000;
+  transition: 0.5s;
+  box-shadow: 0.7px 0.7px 0.5px rgba(0, 0, 0, 0.36);
+  background-color: rgb(255, 255, 255);
+}
+
+.errorStyle input {
+  position: relative;
+  border: 1px solid #c22222;
+  width: 15rem;
+  height: 3rem;
+  background: transparent;
+  padding: 10px;
+  border-radius: 4px;
+  outline: none;
+  font-size: 1.4rem;
+  color: #000000;
+  transition: 0.5s;
+  box-shadow: 0.7px 0.7px 0.5px rgba(0, 0, 0, 0.36);
+  background-color: rgb(255, 255, 255);
+}
+
+.inputBox label {
+  position: relative;
+  display: inline-block;
+  font-size: 1.4rem;
+  color: #000000b1;
+  transition: 0.5s;
+  cursor: text;
+  width: max-content;
+}
+
+.errorStyle label {
+  width: max-content;
+  position: relative;
+  display: inline-block;
+  font-size: 1.4rem;
+  color: #c22222;
+  transition: 0.5s;
+  cursor: text;
+}
+
+#fill {
+  font-size: 1rem;
+  background-color: #fbfbfb;
+  transform: translateY(-1.7rem);
+}
+
+.inputBox input:focus ~ label {
+  font-size: 1rem;
+  color: #37b92b;
+  background-color: #fbfbfb;
+  transform: translateY(-1.7rem);
+}
+
+.inputBox input:focus {
+  border: 1px solid #37b92b;
+}
+
+.errorStyle input:focus ~ label {
+  font-size: 1rem;
+  color: #37b92b;
+  background-color: #fbfbfb;
+  transform: translateY(-1.7rem);
+}
+
+.errorStyle input:focus {
+  border: 1px solid #37b92b;
+}
+
+@media all and (max-width: 1320px) {
+  .inputBox input,
+  .errorStyle input {
+    height: 2.6rem;
+  }
+
+  #fill,
+  .inputBox input:focus ~ label,
+  .errorStyle input:focus ~ label {
+    transform: translateY(-1.5rem);
+  }
+}
+
+@media all and (max-width: 908px) {
+  .inputBox input,
+  .errorStyle input {
+    height: 2.2rem;
+    font-size: 1.2rem;
+  }
+
+  #fill,
+  .inputBox input:focus ~ label,
+  .errorStyle input:focus ~ label {
+    transform: translateY(-1.3rem);
+  }
+
+  .inputBox label,
+  .errorStyle label {
+    font-size: 1.2rem;
+  }
+}
+
+@media all and (max-width: 798px) {
+  .inputBox label,
+  .errorStyle label {
+    font-size: 1.2rem;
+  }
+
+  #fill,
+  .inputBox input:focus ~ label,
+  .errorStyle input:focus ~ label {
+    font-size: 0.9rem;
+  }
+}
+
+@media all and (max-width: 728px) {
+  .inputBox input,
+  .errorStyle input {
+    height: 2rem;
+    font-size: 1.1rem;
+  }
+
+  .inputBox label,
+  .errorStyle label {
+    font-size: 1.1rem;
+  }
+
+  #fill,
+  .inputBox input:focus ~ label,
+  .errorStyle input:focus ~ label {
+    transform: translateY(-1.1rem);
+  }
+}
+
+@media all and (max-width: 600px) {
+  .inputBox input,
+  .errorStyle input {
+    height: 2.5rem;
+    font-size: 1.4rem;
+  }
+
+  .inputBox label,
+  .errorStyle label {
+    font-size: 1.4rem;
+  }
+
+  #fill,
+  .inputBox input:focus ~ label,
+  .errorStyle input:focus ~ label {
+    transform: translateY(-1rem);
+    background-color: white;
+  }
+
+  .inputBox,
+  .errorStyle {
+    height: 4rem;
+  }
+}

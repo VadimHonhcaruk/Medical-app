@@ -1,0 +1,30 @@
+.error {
+  width: 14px;
+  height: 14px;
+  position: relative;
+  top: 2px;
+}
+
+.p {
+  color: #c22222;
+  margin: 1% 0;
+}
+
+@media all and (max-width: 798px) {
+  .error {
+    width: 13px;
+    height: 13px;
+    top: 2px;
+  }
+
+  .p {
+    font-size: 80%;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .p {
+    color: #c22222;
+    margin-top: -3%;
+  }
+}

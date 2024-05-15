@@ -1,15 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import c from './Requisites.module.css';
-import copy from '../../../../images/copy.svg';
 
-export const Requisites = () => {
-
-    const [copyState, setCopyState] = useState(false);
-    const [copyState2, setCopyState2] = useState(false);
-
-    const copyText = (text) => {
-        navigator.clipboard.writeText(text);
-    }
+export const Requisites = ({ amount }) => {
 
     return (
         <div className={c.cont}>
@@ -20,7 +12,7 @@ export const Requisites = () => {
                             <img className={c.bankLogoMini} alt='mono' src={require('../../../../images/pp.png')}></img>
                             <div className={c.flexColumn}>
                                 <div className={c.bold + ' ' + c.flexCopy}>{ }Отримувач: Медичний заклад "Health"</div>
-                                <div className={c.bold + ' ' + c.flexCopy}>{ }Cума: 2300&#8372;</div>
+                                <div className={c.bold + ' ' + c.flexCopy}>{ }Cума: {amount}&#8372;</div>
                             </div>
                         </div>
                         <div className={c.down}>

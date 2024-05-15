@@ -1,0 +1,140 @@
+.modal {
+  width: 99.6%;
+  height: 91.6%;
+  border-radius: 0 0 10px 10px;
+  background-color: rgb(251, 251, 251);
+  padding: 2%;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Blogger Sans Bold";
+  opacity: 1;
+}
+
+@keyframes powerpoint {
+  0% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+.success,
+.congrats {
+  color: #3ecf30;
+  font-family: "Blogger Sans Bold";
+}
+
+.success,
+.fail {
+  font-size: 2.5rem;
+}
+
+.congrats,
+.trouble {
+  font-size: 5rem;
+}
+
+.image {
+  margin-top: 2vw;
+  width: 7vw;
+  height: auto;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-name: success;
+}
+
+.imageTrouble {
+  width: 9vw;
+  height: auto;
+  animation-name: trouble;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@media all and (max-width: 768px) {
+  .modal {
+    background-color: white;
+  }
+
+  .modal div {
+    margin-bottom: 20vh;
+  }
+  .success,
+  .fail {
+    font-size: 2rem;
+  }
+
+  .congrats,
+  .trouble {
+    font-size: 3rem;
+  }
+
+  .success,
+  .congrats,
+  .fail,
+  .trouble {
+    text-shadow: none;
+    font-weight: 700;
+  }
+
+  .image {
+    width: 15vw;
+    margin-top: 2vh;
+  }
+
+  .imageTrouble {
+    width: 20vw;
+    margin-top: 2vh;
+  }
+}
+
+@keyframes success {
+  0% {
+    transform: rotate(-20deg);
+  }
+  50% {
+    transform: rotate(20deg);
+  }
+  100% {
+    transform: rotate(-20deg);
+  }
+}
+
+@keyframes trouble {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+@media all and (max-width: 600px) {
+  .modal {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+  }
+
+  .image {
+    width: 26vw;
+    margin-top: 6vh;
+  }
+
+  .imageTrouble {
+    width: 30vw;
+    margin-top: 2vh;
+  }
+}

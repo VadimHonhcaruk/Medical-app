@@ -8,6 +8,9 @@ import { getSocial } from './functions/getSocial';
 import { getPhone } from './functions/getPhone';
 import { getAddress } from './functions/getAddress';
 import { getStudent } from './functions/getStudent';
+import { MainContent } from './components/Reg/components/MainCont/MainContent';
+import { useMediaQuery } from 'react-responsive';
+import { Header } from './components/Main/HeaderReg/Header';
 
 function App() {
   const { theme, setTheme } = useTheme();
@@ -17,11 +20,12 @@ function App() {
   const [students, setStudents] = useState([]);
 
   const navigate = useNavigate();
+  const isMobile = useMediaQuery({ query: '(max-width: 600px)' });
 
   const [studentData, setStudentData] = useState();
-
-  const [currentIdStudent, setCurrentIdStudent] = useState(localStorage.getItem('user_id'));
-
+  // const [currentIdStudent, setCurrentIdStudent] = useState(localStorage.getItem('user_id'));
+  const [currentIdStudent, setCurrentIdStudent] = useState('');
+  // const [currentIdStudent, setCurrentIdStudent] = useState('6eca8aa4-cd1e-4bb1-933a-fcd1639d929d');
   const TOKEN = process.env.REACT_APP_TOKEN;
   const AUTH = process.env.REACT_APP_AUTH;
   const PATH = process.env.REACT_APP_API_PATH;
@@ -71,14 +75,15 @@ function App() {
     }
   }, [currentIdStudent])
 
-
   const [phone, setPhone] = useState('');
 
   return (
-    <div className="App">
+    <div>
       <Routes>
-        <Route path="/*" element={<Main setCurrentIdStudent={setCurrentIdStudent} studentData={studentData} setStudents={setStudents} students={students} currentIdStudent={currentIdStudent} social={social} phoneSoc={phoneSoc} address={address} theme={theme} handleLightThemeClick={handleLightThemeClick} />} />
+        {currentIdStudent && <Route path="/*" element={<Main setCurrentIdStudent={setCurrentIdStudent} studentData={studentData} setStudents={setStudents} students={students} currentIdStudent={currentIdStudent} social={social} phoneSoc={phoneSoc} address={address} theme={theme} handleLightThemeClick={handleLightThemeClick} />} />}
         <Route path="/login" element={<Login setCurrentIdStudent={setCurrentIdStudent} currentIdStudent={currentIdStudent} phone={phone} setPhone={setPhone} social={social} phoneSoc={phoneSoc} address={address} />} />
+        <Route path="/registration" element={<div className="root"><div className="App"><Header /><MainContent /></div></div>} />
+
       </Routes>
     </div>
   );

@@ -11,6 +11,9 @@
 li {
   font-size: 1.3rem;
   margin: 0.8rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 label {
@@ -63,4 +66,31 @@ h2 {
 
 .formik {
   width: 40vw;
+}
+
+.oplata {
+  padding: 0.4rem 2rem;
+  font-weight: 900;
+  color: white;
+  background-color: #85a2d4;
+  font-size: 2rem;
+  text-transform: uppercase;
+  width: fit-content;
+  transition: all ease 0.2s;
+}
+
+.oplata:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.flexReqiZap {
+  display: flex;
+  gap: 2rem;
+}
+
+.icons {
+  width: 30px;
+  border: 1px solid #85a2d4;
+  padding: 0.1rem;
 }

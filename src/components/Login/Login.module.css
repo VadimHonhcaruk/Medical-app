@@ -5,6 +5,17 @@
   background-color: var(--background-color);
 }
 
+.reg {
+  cursor: pointer;
+  font-size: 30px;
+  opacity: 0.5;
+  transition: all ease 0.2s;
+}
+
+.reg:hover {
+  opacity: 0.8;
+}
+
 .logoName {
   font-size: 70px;
   display: flex;
