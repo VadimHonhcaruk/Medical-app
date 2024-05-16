@@ -23,9 +23,7 @@ function App() {
   const isMobile = useMediaQuery({ query: '(max-width: 600px)' });
 
   const [studentData, setStudentData] = useState();
-  // const [currentIdStudent, setCurrentIdStudent] = useState(localStorage.getItem('user_id'));
-  const [currentIdStudent, setCurrentIdStudent] = useState('');
-  // const [currentIdStudent, setCurrentIdStudent] = useState('6eca8aa4-cd1e-4bb1-933a-fcd1639d929d');
+  const [currentIdStudent, setCurrentIdStudent] = useState(localStorage.getItem('user_id'));
   const TOKEN = process.env.REACT_APP_TOKEN;
   const AUTH = process.env.REACT_APP_AUTH;
   const PATH = process.env.REACT_APP_API_PATH;
